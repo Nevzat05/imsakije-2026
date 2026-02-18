@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Imsakije Ramazan 2026</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div class="stars" id="stars"></div>
+
+  <div class="container">
+
+    <div class="made-with">Made with <span class="heart">♥</span> Nevzat Elezi</div>
+
+    <div class="header">
+      <span class="moon-icon">☽</span>
+      <h1>Imsakije 2026</h1>
+      <p class="subtitle">Ramazan 1447 H &nbsp;|&nbsp; 19 Shkurt — 20 Mars</p>
+      <p class="subtitle2">🇲🇰 Maqedoni e Veriut</p>
+    </div>
+
+    <!-- ZGJEDHJA E QYTETIT -->
+    <div class="selector-box">
+      <label>🏙️ Zgjedh Qytetin</label>
+      <div class="city-btns" id="city-btns">
+        <button class="city-btn active" data-city="Gostivar">Gostivar</button>
+        <button class="city-btn" data-city="Tetovë">Tetovë</button>
+        <button class="city-btn" data-city="Kërçovë">Kërçovë</button>
+        <button class="city-btn" data-city="Shkup">Shkup</button>
+        <button class="city-btn" data-city="Kumanovë">Kumanovë</button>
+        <button class="city-btn" data-city="Prilep">Prilep</button>
+        <button class="city-btn" data-city="Strugë">Strugë</button>
+        <button class="city-btn" data-city="Dibër">Dibër</button>
+        <button class="city-btn" data-city="Ohër">Ohër</button>
+      </div>
+    </div>
+
+    <!-- SOT BOX -->
+    <div class="today-box">
+      <div class="today-top">
+        <span class="today-badge">SOT</span>
+        <span class="today-date" id="today-date"></span>
+        <span class="today-city" id="today-city">Gostivar</span>
+      </div>
+
+      <div class="today-times">
+        <div class="today-time-item">
+          <span class="tt-icon">🌙</span>
+          <span class="tt-label">Imsaku / Syfyri</span>
+          <span class="tt-val syfyr-col" id="today-syfyr">--:--</span>
+        </div>
+        <div class="today-sep"></div>
+        <div class="today-time-item">
+          <span class="tt-icon">🌅</span>
+          <span class="tt-label">Akshami / Iftari</span>
+          <span class="tt-val iftar-col" id="today-iftar">--:--</span>
+        </div>
+      </div>
+
+      <div class="countdown-area">
+        <div class="cd-label" id="cd-label">—</div>
+        <div class="cd-clock" id="cd-clock">--:--:--</div>
+        <div class="cd-sub" id="cd-sub"></div>
+      </div>
+    </div>
+
+    <!-- DUAJA SECTION -->
+    <div class="duaja-section">
+      <div class="duaja-card duaja-left">
+        <div class="duaja-title">🌙 Duaja e Syfyrit</div>
+        <div class="duaja-latin">"Nevejtu en esume gaden lil-lahi-teala"</div>
+        <div class="duaja-divider"></div>
+        <div class="duaja-shqip">🇦🇱 Vendosa të agjëroj këtë ditë të Ramazanit për hire të Allahut.</div>
+      </div>
+      <div class="duaja-card duaja-right">
+        <div class="duaja-title">🌅 Duaja e Iftarit</div>
+        <div class="duaja-latin">"Allahumme inni leke sumtu, ve bike amentu, ve alejke tevekkeltu, ve ala rizkike eftartu."</div>
+        <div class="duaja-divider"></div>
+        <div class="duaja-shqip">🇦🇱 O Allah, për Ty kam agjëruar, Ty të kam besuar, tek Ti jam mbështetur dhe me furnizimin Tënd e çela agjërimin.</div>
+      </div>
+    </div>
+
+    <!-- KALENDARI -->
+    <div class="calendar-box">
+      <h2 class="cal-title">🗓️ Të 29 Ditët e Ramazanit 2026</h2>
+      <div class="cal-head">
+        <span>Nr</span>
+        <span>Data</span>
+        <span class="syfyr-head">🌙 Imsak</span>
+        <span class="iftar-head">🌅 Aksham</span>
+        <span class="col-rem">Koha mbetur</span>
+      </div>
+      <div id="cal-list"></div>
+
+      <!-- BAJRAMI -->
+      <div class="bajram-box">
+        <div class="bajram-top">
+          <span class="bajram-icon">🌙</span>
+          <div>
+            <div class="bajram-title">🎉 Bajrami — 20 Mars (e Premte)</div>
+            <div class="bajram-sub">Namazi i Bajramit do të falet në orën <strong>06:43</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
